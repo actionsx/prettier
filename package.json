@@ -1,10 +1,23 @@
 {
   "name": "@actionsx/prettier",
   "version": "0.0.0",
-  "description": "Prettier actions.",
+  "description": "Native prettier CLI for Github Actions.",
   "main": "index.js",
   "repository": "https://github.com/actionsx/prettier.git",
   "author": "Phuc (Minh) Tran",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "build": "ncc build index.js && ncc build prettier.js -o dist/prettier",
+    "check": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/exec": "^1.0.4",
+    "prettier": "^2.0.5"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.23.0"
+  }
 }

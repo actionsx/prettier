@@ -1,0 +1,1 @@
+require("prettier/bin-prettier");
