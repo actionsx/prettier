@@ -1,7 +1,7 @@
 {
   "name": "@actionsx/prettier",
   "version": "0.0.0",
-  "description": "Native prettier CLI for Github Actions.",
+  "description": "Native, blazingly-fast Prettier CLI on Github Actions",
   "main": "index.js",
   "repository": "https://github.com/actionsx/prettier.git",
   "author": "Phuc (Minh) Tran",
