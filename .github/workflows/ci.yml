@@ -24,3 +24,14 @@ jobs:
         uses: ./
         with:
           args: --write .
+  tag-v2:
+    if: github.ref == 'refs/heads/master'
+    needs: [test]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Tag v2
+        run: |
+          git tag -a v2 -m "Prettier CLI v2"
+          git push origin v2 -f
