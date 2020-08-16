@@ -8,14 +8,14 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "ncc build index.js && ncc build prettier.js -o dist/prettier",
+    "build": "ncc build index.js",
     "check": "prettier --check .",
     "format": "prettier --write ."
   },
   "dependencies": {
     "@actions/core": "^1.2.4",
-    "@actions/exec": "^1.0.4",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "shell-quote": "^1.7.2"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.23.0"
