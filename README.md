@@ -1,10 +1,10 @@
 # Prettier Github Action
 
-![build][build-badge]
-![license][license-badge]
-![code style][code-style-badge]
+![build][build-badge] ![license][license-badge] ![code style][code-style-badge]
 
-Native `prettier` CLI for Github Actions.
+Native, blazingly-fast `prettier` CLI on Github Actions, allows you to run any
+`prettier` CLI commands on Github Actions without installing Node.js or any
+dependency in advance.
 
 ## Usage
 
@@ -19,7 +19,7 @@ Native `prettier` CLI for Github Actions.
 
 This project is licensed under the [MIT License][license-file].
 
-Copyright © 2020 - present, ActionX. All rights reserved.
+Copyright © 2020-present, ActionsX. All rights reserved.
 
 <!-- Links -->
 
@@ -27,6 +27,8 @@ Copyright © 2020 - present, ActionX. All rights reserved.
 
 <!-- Badges -->
 
-[build-badge]: https://img.shields.io/github/workflow/status/actionsx/prettier/CI
+[build-badge]:
+  https://img.shields.io/github/workflow/status/actionsx/prettier/CI
 [license-badge]: https://img.shields.io/github/license/actionsx/prettier
-[code-style-badge]: https://img.shields.io/badge/code%20style-prettier-ff69b4?logo=prettier&logoColor=white
+[code-style-badge]:
+  https://img.shields.io/badge/code%20style-prettier-ff69b4?logo=prettier&logoColor=white
