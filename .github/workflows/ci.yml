@@ -1,9 +1,6 @@
 name: CI
 
-on:
-  pull_request:
-  push:
-    branches: [main]
+on: [push]
 
 jobs:
   test:
@@ -11,7 +8,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Prettier Check
+      - name: prettier --version
+        uses: ./
+        with:
+          args: --version
+      - name: prettier --help
+        uses: ./
+        with:
+          args: --help
+      - name: prettier --check .
         uses: ./
         with:
           args: --check .
+      - name: prettier --write .
+        uses: ./
+        with:
+          args: --write .
