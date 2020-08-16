@@ -1,0 +1,10 @@
+{
+  "name": "@actionsx/prettier",
+  "version": "0.0.0",
+  "description": "Prettier actions.",
+  "main": "index.js",
+  "repository": "https://github.com/actionsx/prettier.git",
+  "author": "Phuc (Minh) Tran",
+  "license": "MIT",
+  "private": false
+}
