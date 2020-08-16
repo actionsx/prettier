@@ -7,6 +7,11 @@ inputs:
   args:
     description: Prettier CLI arguments
     required: true
+outputs:
+  stdout:
+    description: Prettier CLI output to stdout
+  stderr:
+    description: Prettier CLI output to stderr
 runs:
   using: node12
   main: dist/index.js

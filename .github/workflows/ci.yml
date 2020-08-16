@@ -9,9 +9,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: prettier --version
+        id: prettier-version
         uses: ./
         with:
           args: --version
+      - run: echo "${{ steps.prettier-version.outputs.stdout }}"
       - name: prettier --help
         uses: ./
         with:
