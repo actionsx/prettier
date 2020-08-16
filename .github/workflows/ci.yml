@@ -2,6 +2,9 @@ name: CI
 
 on: [push]
 
+env:
+  node-version: 12.x
+
 jobs:
   test:
     name: Test
@@ -31,13 +34,29 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Setup Node.js
+      - name: Setup Node.js ${{ env.node-version }}
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x
+          node-version: ${{ env.node-version }}
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Rebuild output
         run: yarn build -o dist-ci
       - name: Verify output
         run: diff -q dist/index.js dist-ci/index.js
+  release:
+    # if: github.ref == 'refs/heads/master'
+    needs: [test, verify-output]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node.js ${{ env.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ env.node-version }}
+      - id: get-prettier-info
+        name: Get Prettier info
+        run: echo "::set-output name=version::$(yarn info -s prettier version)"
+      - name: Create release v${{ steps.get-prettier-info.outputs.version }}
+        run: echo "${{ steps.get-prettier-info.outputs.version }}"
