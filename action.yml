@@ -1,0 +1,9 @@
+name: actionsx/prettier
+description: Native prettier CLI for Github Actions.
+inputs:
+  args:
+    required: true
+    description: Prettier CLI arguments
+runs:
+  using: node12
+  main: dist/index.js
