@@ -40,4 +40,4 @@ jobs:
       - name: Rebuild output
         run: yarn build -o dist-ci
       - name: Verify output
-        run: diff -q dist/index.js dist-ci/index.js
+        run: diff -qr dist dist-ci
