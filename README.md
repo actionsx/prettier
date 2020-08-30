@@ -9,6 +9,7 @@ dependency in advance.
 ## Usage
 
 ```yml
+- uses: actions/checkout@v2  # Always check out the repository first
 - uses: actionsx/prettier@v2
   with:
     # prettier CLI arguments.
