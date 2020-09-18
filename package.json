@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@actions/core": "^1.2.5",
-    "prettier": "^2.1.1",
+    "prettier": "^2.1.2",
     "shell-quote": "^1.7.2"
   },
   "devDependencies": {
