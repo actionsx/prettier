@@ -3,8 +3,8 @@
 ![build][build-badge] ![license][license-badge] ![code style][code-style-badge]
 
 Native, blazingly-fast `prettier` CLI on Github Actions, allows you to run any
-`prettier` CLI commands on Github Actions without installing Node.js or any
-dependency in advance.
+`prettier` CLI commands on Github Actions without having to install Node.js or
+any dependency in advance.
 
 ## Usage
 
@@ -20,7 +20,7 @@ dependency in advance.
 
 This project is licensed under the [MIT License][license-file].
 
-Copyright © 2020-present, ActionsX. All rights reserved.
+Copyright © 2020 ActionsX. All rights reserved.
 
 <!-- Links -->
 
