@@ -1,12 +1,6 @@
 {
   "name": "@actionsx/prettier",
   "version": "0.0.0",
-  "description": "Native, blazingly-fast Prettier CLI on Github Actions",
-  "main": "index.js",
-  "repository": "https://github.com/actionsx/prettier.git",
-  "author": "Phuc (Minh) Tran",
-  "license": "MIT",
-  "private": false,
   "scripts": {
     "build": "ncc build index.js",
     "check": "prettier --check .",
