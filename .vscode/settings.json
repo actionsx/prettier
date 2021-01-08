@@ -1,10 +1,15 @@
 {
+  // Code style
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  // Misc
   "files.exclude": {
     "node_modules/": true,
     "yarn.lock": true,
     "dist/": true
   },
-  "files.trimTrailingWhitespace": true,
-  "files.trimFinalNewlines": true,
-  "files.insertFinalNewline": true
 }
