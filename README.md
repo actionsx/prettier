@@ -1,6 +1,7 @@
 # Prettier Github Action
 
-![build][build-badge] ![license][license-badge] ![code style][code-style-badge]
+[![build][build-badge]][build-url] [![code style][code-style-badge]][prettierrc]
+[![license][license-badge]][license-file]
 
 Native, blazingly-fast `prettier` CLI on Github Actions, allows you to run every
 `prettier` CLI command on Github Actions without having to install Node.js or
@@ -20,11 +21,12 @@ any dependency in advance.
 
 This project is licensed under the [MIT License][license-file].
 
-Copyright © 2020 ActionsX. All rights reserved.
-
 <!-- Links -->
 
 [license-file]: /LICENSE
+[prettierrc]: /.prettierrc.json
+[build-url]:
+  https://github.com/actionsx/prettier/actions?query=branch%3Amaster+workflow%3ACI
 
 <!-- Badges -->
 
