@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [master]
 
+env:
+  NODE_VERSION: 12
+  FORCE_COLOR: 3
+
 jobs:
   test:
     name: Test
