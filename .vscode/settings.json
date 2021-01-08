@@ -11,5 +11,5 @@
     "node_modules/": true,
     "yarn.lock": true,
     "dist/": true
-  },
+  }
 }
