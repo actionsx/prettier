@@ -2,8 +2,9 @@ name: CI
 
 on:
   push:
-    branches:
-      - "**"
+    branches: [master]
+  pull_request:
+    branches: [master]
 
 jobs:
   test:
@@ -34,12 +35,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Setup Node.js
-        uses: actions/setup-node@v2.1.4
+      - name: Setup Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v2
         with:
-          node-version: 12.x
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Get Yarn cache directory
+        id: get-yarn-cache-dir
+        run: echo "::set-output name=path::$(yarn cache dir)"
+      - name: Cache Yarn dependencies
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.get-yarn-cache-dir.outputs.path }}
+          key: "${{ runner.os }}-node-${{ env.NODE_VERSION }}-yarn-\
+            ${{ hashFiles('**/yarn.lock') }}"
+          restore-keys: |
+            ${{ runner.os }}-node-${{ env.NODE_VERSION }}-yarn-
+      - run: yarn install --frozen-lockfile
       - name: Rebuild output
         run: yarn build -o dist-ci
       - name: Verify output
