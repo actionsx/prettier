@@ -34,7 +34,7 @@ jobs:
         with:
           args: --write .
   verify-output:
-    name: Verify Output
+    name: Verify output
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
