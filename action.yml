@@ -1,5 +1,5 @@
 name: actionsx/prettier
-description: Native, blazingly-fast Prettier CLI on Github Actions
+description: 🔨 Native, blazingly-fast Prettier CLI on Github Actions
 branding:
   icon: align-justify
   color: red
