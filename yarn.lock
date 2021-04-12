@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@actions/core/-/core-1.2.6.tgz#a78d49f41a4def18e88ce47c2cac615d5694bf09"
   integrity sha512-ZQYitnqiyBc3D+k7LsgSBmMDVkOVidaagDG7j3fOym77jNunWRuYx7VSHa9GNfFZh+zh61xsCjRj4JxMZlDqTA==
 
-"@vercel/ncc@^0.26.2":
-  version "0.26.2"
-  resolved "https://registry.yarnpkg.com/@vercel/ncc/-/ncc-0.26.2.tgz#d0799374eb8618e48cc0841c82793b5b670c9219"
-  integrity sha512-qdajZzkGn62Ry+v7bmTSd7Qza2BVjEBuCcGpxCV5Y+ANa6d//BzByMkODmYQAhAXOg6kiAgVpbnfsd/At3PWQA==
+"@vercel/ncc@^0.28.2":
+  version "0.28.2"
+  resolved "https://registry.yarnpkg.com/@vercel/ncc/-/ncc-0.28.2.tgz#cf0c4f7e4c980bc849eaf115851f2440cd62c8a5"
+  integrity sha512-2ZBPviK9nFHzymu9POKGz50BRGGBIw7a8VcjgH73Xu2H4IvZx3KS0Qk/SS7S/N6iAalAGGxLSwFM1obeBGWXGg==
 
 prettier@^2.2.1:
   version "2.2.1"
