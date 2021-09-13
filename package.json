@@ -12,6 +12,6 @@
     "shell-quote": "^1.7.2"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.30.0"
+    "@vercel/ncc": "^0.31.1"
   }
 }
