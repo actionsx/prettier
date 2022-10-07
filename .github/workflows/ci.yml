@@ -8,7 +8,6 @@ on:
 
 env:
   NODE_VERSION: 16
-  FORCE_COLOR: 3
 
 jobs:
   test:
