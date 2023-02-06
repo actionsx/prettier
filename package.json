@@ -9,7 +9,7 @@
   "dependencies": {
     "@actions/core": "^1.10.0",
     "prettier": "^2.7.1",
-    "shell-quote": "^1.7.3"
+    "shell-quote": "^1.8.0"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.34.0"
