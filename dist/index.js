@@ -39827,6 +39827,7 @@ async function main(context) {
 ;// CONCATENATED MODULE: ./index.js
 const core = __nccwpck_require__(2186);
 const { parse: index_parse } = __nccwpck_require__(7029);
+// bin/prettier can't be used, because ncc can't resolve dependencies
 
 
 function index_run() {
