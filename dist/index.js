@@ -3216,8 +3216,8 @@ const promises_namespaceObject = require("fs/promises");
 
 
 
-const internal_require = (0,external_module_namespaceObject.createRequire)("file:///G:/Dev/actionsx-prettier/node_modules/prettier/internal/internal.mjs");
-const internal_filename = (0,external_url_namespaceObject.fileURLToPath)("file:///G:/Dev/actionsx-prettier/node_modules/prettier/internal/internal.mjs");
+const internal_require = (0,external_module_namespaceObject.createRequire)(import.meta.url);
+const internal_filename = (0,external_url_namespaceObject.fileURLToPath)(import.meta.url);
 const internal_dirname = (0,external_path_.dirname)(internal_filename);
 
 var __create = Object.create;
@@ -11041,8 +11041,8 @@ var public_default = public_exports;
 
 
 
-const prettier_require = (0,external_module_namespaceObject.createRequire)("file:///G:/Dev/actionsx-prettier/node_modules/prettier/index.mjs");
-const prettier_filename = (0,external_url_namespaceObject.fileURLToPath)("file:///G:/Dev/actionsx-prettier/node_modules/prettier/index.mjs");
+const prettier_require = (0,external_module_namespaceObject.createRequire)(import.meta.url);
+const prettier_filename = (0,external_url_namespaceObject.fileURLToPath)(import.meta.url);
 const prettier_dirname = (0,external_path_.dirname)(prettier_filename);
 
 var prettier_create = Object.create;
@@ -32850,8 +32850,8 @@ const external_tty_namespaceObject = require("tty");
 
 
 
-const cli_require = (0,external_module_namespaceObject.createRequire)("file:///G:/Dev/actionsx-prettier/node_modules/prettier/internal/cli.mjs");
-const cli_filename = (0,external_url_namespaceObject.fileURLToPath)("file:///G:/Dev/actionsx-prettier/node_modules/prettier/internal/cli.mjs");
+const cli_require = (0,external_module_namespaceObject.createRequire)(import.meta.url);
+const cli_filename = (0,external_url_namespaceObject.fileURLToPath)(import.meta.url);
 const cli_dirname = (0,external_path_.dirname)(cli_filename);
 
 var cli_create = Object.create;
