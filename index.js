@@ -1,5 +1,5 @@
-const core = require("@actions/core");
-const { parse } = require("shell-quote");
+import * as core from "@actions/core";
+import { parse } from "shell-quote";
 // bin/prettier can't be used, because ncc can't resolve dependencies
 import { run as runPrettier } from "prettier/internal/cli.mjs";
 
