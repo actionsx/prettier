@@ -1,7 +1,6 @@
-"use strict";
-exports.id = 100;
-exports.ids = [100];
-exports.modules = {
+export const id = 100;
+export const ids = [100];
+export const modules = {
 
 /***/ 100:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
@@ -32,4 +31,3 @@ var Ri=Object.create;var ct=Object.defineProperty;var Ui=Object.getOwnPropertyDe
 /***/ })
 
 };
-;

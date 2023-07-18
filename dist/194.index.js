@@ -1,9 +1,8 @@
-"use strict";
-exports.id = 194;
-exports.ids = [194];
-exports.modules = {
+export const id = 194;
+export const ids = [194];
+export const modules = {
 
-/***/ 2194:
+/***/ 194:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -38,4 +37,3 @@ If '${e}' is a directive input, make sure the directive is imported by the curre
 /***/ })
 
 };
-;

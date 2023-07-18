@@ -1,9 +1,8 @@
-"use strict";
-exports.id = 692;
-exports.ids = [692];
-exports.modules = {
+export const id = 692;
+export const ids = [692];
+export const modules = {
 
-/***/ 4692:
+/***/ 692:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -48,4 +47,3 @@ spurious results.`)}}return!1};var M=class{constructor(t,n="GraphQL request",r={
 /***/ })
 
 };
-;

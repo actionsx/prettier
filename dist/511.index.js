@@ -1,9 +1,8 @@
-"use strict";
-exports.id = 511;
-exports.ids = [511];
-exports.modules = {
+export const id = 511;
+export const ids = [511];
+export const modules = {
 
-/***/ 7511:
+/***/ 511:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -180,4 +179,3 @@ ${t}`}function ve(t){return t.position.start.offset}function hr(t){return t.posi
 /***/ })
 
 };
-;

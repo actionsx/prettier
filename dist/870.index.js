@@ -1,9 +1,8 @@
-"use strict";
-exports.id = 870;
-exports.ids = [870];
-exports.modules = {
+export const id = 870;
+export const ids = [870];
+export const modules = {
 
-/***/ 2870:
+/***/ 870:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -71,4 +70,3 @@ Expected it to be ${r}.`}var tn=class extends Error{name="InvalidDocError";const
 /***/ })
 
 };
-;

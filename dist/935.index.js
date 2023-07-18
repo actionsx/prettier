@@ -1,9 +1,8 @@
-"use strict";
-exports.id = 935;
-exports.ids = [935];
-exports.modules = {
+export const id = 935;
+export const ids = [935];
+export const modules = {
 
-/***/ 2935:
+/***/ 935:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -78,4 +77,3 @@ ${r.content}`};var ql=/^.$/su;function Tl(e,r){return e=Sl(e,r),e=Pl(e),e=Ol(e,r
 /***/ })
 
 };
-;
