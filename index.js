@@ -1,5 +1,7 @@
-const core = require("@actions/core");
-const { parse } = require("shell-quote");
+import * as core from "@actions/core";
+import { parse } from "shell-quote";
+// bin/prettier can't be used, because ncc can't resolve dependencies
+import { run as runPrettier } from "prettier/internal/cli.mjs";
 
 function run() {
   const args = core.getInput("args");
@@ -7,8 +9,7 @@ function run() {
     throw new Error("args must be a string.");
   }
 
-  process.argv = [process.argv[0], process.argv[1], ...parse(args)];
-  require("prettier/bin-prettier");
+  runPrettier(parse(args));
 }
 
 try {
