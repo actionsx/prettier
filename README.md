@@ -15,7 +15,7 @@ or any dependency in advance.
 ## Usage
 
 ```yml
-- uses: actions/checkout@v2 # Check out the repository first.
+- uses: actions/checkout@v3 # Check out the repository first.
 - uses: actionsx/prettier@v2
   with:
     # prettier CLI arguments.
